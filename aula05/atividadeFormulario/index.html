@@ -1,0 +1,139 @@
+<!--
+Projeto: Formulário Tech Conference
+Disciplina: Desenvolvimento Web Front-end | Turma: ADS
+Autor: Mathues Siqueira
+
+Descrição: Formulário HTML5.
+
+Data: 06/05/2026
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <h2>Formulario de Cadastro</h2>
+
+            <form id="formCadastro">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>Este é um formulário de fieldset.</p>
+                    <p>Nome completo:</p>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+
+                    <p>Email:</p>
+                    <input type="email" id="email" name="email" required placeholder="Seu Email">
+
+                    <p>Data de nascimento:</p>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informções</legend>
+
+                    <p>Genero:</p>
+                    
+                    <input type="radio" name="genero" id="masc" value="masculino"> 
+                    <label for="masc">Masculino</label> 
+                    
+                    <input type="radio" name="genero" id="femi" value="feminino">  
+                    <label for="femi">Feminino</label> 
+                     
+                    <input type="radio" name="genero" id="n-inf" value="nao-informado"> 
+                    <label for="n-inf">Não informado</label> 
+
+                    <hr>
+
+                    <p>Interesses:</p>
+                    
+                    <input type="checkbox" name="interesses" id="tecl" value="tecnologia"> 
+                    <label for="tecl">Tecnologia</label> 
+                    
+                    <input type="checkbox" name="interesses" id="espt" value="esportes">  
+                    <label for="espt">Esportes</label> 
+                     
+                    <input type="checkbox" name="interesses" id="musc" value="musica"> 
+                    <label for="musc">Música</label> 
+
+                    <input type="checkbox" name="interesses" id="jogos" value="jogos"> 
+                    <label for="jogos">Jogos</label> 
+
+                    <hr>
+
+                    <p>Estado:</p>
+                    <select name="estado" id="estado" required>
+                        <option value="SP">Sao Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="GO">Goiás</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="BA">Bahia</option>
+                    </select>
+
+                    <hr>
+
+                    <p>Menssagem:</p>
+                    <textarea name="Menssagem" id="msg"></textarea>
+
+                    <hr>
+
+                    <p>Upload de imagem:</p>
+                    <input type="file" id="arquivo" name="arquivo" accept=".png, .jpg, .jpeg" required>
+
+                </fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+
+        <!-- Resultado será exibido aqui, não é necessário editar-->
+        <section>
+            <h2 id="sec-resultado">Resultado</h2>
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Formulário Turma 01 ADS</p>
+
+        <nav aria-label="Documentações">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="Documentação HTML" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="Documentação CSS" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="Documentação JavaScript" width="40">
+            </a>
+        </nav>
+
+    </footer>
+
+</body>
+</html>
