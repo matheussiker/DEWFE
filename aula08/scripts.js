@@ -17,7 +17,7 @@ function adicionarTarefa(){
        novaTarefa.textContent = tarefa;
        listaDeTarefas.appendChild(novaTarefa);
        contagem++;
-       contador.textContent = 'Numero de tareafas: ' + contagem
+       contador.textContent = 'Numero de tarefas: ' + contagem
     }
     else{
         mensagem = 'Tarefa invalida, redigite.';
@@ -35,3 +35,18 @@ function tarefasValidas(tarefa){
     return tarefa.trim().length >=5;
 }
 
+function LimparTarefas(){
+    const listaDeTarefas = document.getElementById('lista_tarefas');
+
+    if (listaDeTarefas.children.length >=1){
+        const contador = document.getElementById('numTarefas');
+        const mensagemElement = document.getElementById('mensagem');
+
+        listaDeTarefas.innerHTML = '';
+        contagem = 0;
+        contador.textContent ='Numero de tarefas: ' + contagem
+        mensagemElement.textContent = 'Lista limpa!'
+        mensagemElement.style.color = 'green'
+    }
+
+}
