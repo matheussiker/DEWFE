@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site usando bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a href="../index.html" class="nav-link text-white"><span class="navbar-brand" >Home</span></a>
+                <a class="nav-link text-white" href="contato.html">Contato</a>
+                <a class="nav-link text-white" href="sobre.html">Sobre</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row justify-content-around mt-5">
+                <div class="card col-12 col-md-6 col-lg-6">
+                    <div class="card-body">
+                        <img  class="mx-auto d-block"  src="data:image/jpeg;base64,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" alt="">
+                        <h5 class="card-title mt-5">Iphone 17</h5>
+                        <p class="card-text mt-3">
+                            O iPhone 17 é esperado como a nova geração padrão da Apple, 
+                            trazendo melhorias importantes sem chegar ao nível extremo 
+                            dos modelos Pro. Rumores apontam para uma tela OLED de 
+                            aproximadamente 6,3 polegadas com atualização mais fluida, 
+                            design refinado e novo processador da linha A19. Também há 
+                            expectativa de melhorias na câmera frontal, maior eficiência 
+                            energética e mais memória RAM para recursos de inteligência
+                            artificial e multitarefa.Além do desempenho mais rápido, 
+                            o aparelho deve focar em experiência premium no uso diário,
+                            com gravação de vídeos mais estável, fotos noturnas melhores 
+                            e maior duração de bateria. O modelo deve manter o ecossistema 
+                            integrado da Apple, funcionando perfeitamente com AirPods, Apple Watch e MacBooks.</p>
+                        <a href="#" class="btn btn-success mt-3 d-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

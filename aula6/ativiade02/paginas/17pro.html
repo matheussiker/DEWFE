@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site usando bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a href="../index.html" class="nav-link text-white"><span class="navbar-brand" >Home</span></a>
+                <a class="nav-link text-white" href="contato.html">Contato</a>
+                <a class="nav-link text-white" href="sobre.html">Sobre</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row justify-content-around mt-5">
+                <div class="card col-12 col-md-6 col-lg-6">
+                    <div class="card-body">
+                        <img class="mx-auto d-block" src="data:image/jpeg;base64,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">
+                        <h5 class="card-title mt-5">Iphone 17 Pro </h5>
+                        <p class="card-text mt-3">
+                            O iPhone 17 Pro promete ser um dos celulares mais poderosos da Apple.
+                             Os rumores indicam mudanças no design traseiro, novo conjunto de câmeras 
+                             de 48 MP, tela ProMotion de 120 Hz e processador A19 Pro com foco em desempenho
+                             e inteligência artificialA Apple também pode trazer melhorias no sistema de 
+                             resfriamento interno, permitindo melhor performance em jogos, edição de vídeos 
+                             e multitarefa pesada. A câmera deve receber zoom aprimorado, gravação em qualidade
+                              ainda mais profissional e novos recursos para criadores de conteúdo. Outro destaque 
+                              esperado é a construção premium com acabamento metálico refinado e maior eficiência energética.</p>
+                        <a href="#" class="btn btn-success mt-3 d-block">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
